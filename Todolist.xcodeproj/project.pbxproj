@@ -16,6 +16,8 @@
 		7F1D401E2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D401D2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift */; };
 		7F1D40202792EE8300FF6F3C /* AddNewTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1D401F2792EE8300FF6F3C /* AddNewTableViewController.storyboard */; };
 		7F1D4023279358BE00FF6F3C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D4022279358BE00FF6F3C /* Category.swift */; };
+		7F1D4026279364F500FF6F3C /* IconCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D4025279364F500FF6F3C /* IconCategoryTableViewController.swift */; };
+		7F1D402827936A5200FF6F3C /* IconCategoryTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1D402727936A5200FF6F3C /* IconCategoryTableViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7F1D401D2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCategoryTableViewController.swift; sourceTree = "<group>"; };
 		7F1D401F2792EE8300FF6F3C /* AddNewTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewTableViewController.storyboard; sourceTree = "<group>"; };
 		7F1D4022279358BE00FF6F3C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7F1D4025279364F500FF6F3C /* IconCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCategoryTableViewController.swift; sourceTree = "<group>"; };
+		7F1D402727936A5200FF6F3C /* IconCategoryTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IconCategoryTableViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		7F1D401C2792EE5C00FF6F3C /* AddNewCategory */ = {
 			isa = PBXGroup;
 			children = (
+				7F1D4024279364D100FF6F3C /* IconCategory */,
 				7F1D401D2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift */,
 				7F1D401F2792EE8300FF6F3C /* AddNewTableViewController.storyboard */,
 			);
@@ -106,6 +111,15 @@
 				7F1D4022279358BE00FF6F3C /* Category.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7F1D4024279364D100FF6F3C /* IconCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7F1D4025279364F500FF6F3C /* IconCategoryTableViewController.swift */,
+				7F1D402727936A5200FF6F3C /* IconCategoryTableViewController.storyboard */,
+			);
+			path = IconCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1D402827936A5200FF6F3C /* IconCategoryTableViewController.storyboard in Resources */,
 				7F1D40182792EB1F00FF6F3C /* HomeTableViewController.storyboard in Resources */,
 				7F1D40202792EE8300FF6F3C /* AddNewTableViewController.storyboard in Resources */,
 				7F1D400F2792EABB00FF6F3C /* LaunchScreen.storyboard in Resources */,
@@ -182,6 +197,7 @@
 			files = (
 				7F1D401A2792EB3300FF6F3C /* HomeTableViewController.swift in Sources */,
 				7F1D4023279358BE00FF6F3C /* Category.swift in Sources */,
+				7F1D4026279364F500FF6F3C /* IconCategoryTableViewController.swift in Sources */,
 				7F1D40032792EAB900FF6F3C /* AppDelegate.swift in Sources */,
 				7F1D401E2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift in Sources */,
 				7F1D40052792EAB900FF6F3C /* SceneDelegate.swift in Sources */,

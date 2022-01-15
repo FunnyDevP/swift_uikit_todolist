@@ -11,3 +11,4 @@ struct TodolistCategory {
     let id: UUID
     var name: String
 }
+

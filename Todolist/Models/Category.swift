@@ -10,5 +10,6 @@ import Foundation
 struct TodolistCategory {
     let id: UUID
     var name: String
+    var iconName: String
 }
 

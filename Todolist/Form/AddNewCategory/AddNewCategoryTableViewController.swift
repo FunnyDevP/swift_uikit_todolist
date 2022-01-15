@@ -14,6 +14,8 @@ class AddNewCategoryTableViewController: UITableViewController, IconCategoryDele
     
     var delegate: AddNewCategoryDelegate?
     
+    var iconName: String = "book.fill"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "New Category"
@@ -35,7 +37,7 @@ class AddNewCategoryTableViewController: UITableViewController, IconCategoryDele
     
     // MARK: - Action
     @objc func done(_ sender: Any) {
-        let category = TodolistCategory(id: UUID(), name: txtCategoryName.text!)
+        let category = TodolistCategory(id: UUID(), name: txtCategoryName.text!,iconName: iconName)
         delegate?.newCategory(item: category)
         
         navigationController?.popViewController(animated: true)
@@ -59,6 +61,7 @@ class AddNewCategoryTableViewController: UITableViewController, IconCategoryDele
     
     // MARK: - delegate
     func categoryIcon(icon: String) {
+        iconName = icon
         setTextsOnIconCell(iconName: icon)
     }
     

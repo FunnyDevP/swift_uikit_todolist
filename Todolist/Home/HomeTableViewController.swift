@@ -39,7 +39,7 @@ class HomeTableViewController: UITableViewController,AddNewCategoryDelegate {
         
         var content = cell.defaultContentConfiguration()
         content.text = category.name
-        
+        content.image = UIImage(systemName: category.iconName)
         cell.contentConfiguration = content
         return cell
     }
@@ -47,6 +47,7 @@ class HomeTableViewController: UITableViewController,AddNewCategoryDelegate {
     // MARK: - delegate
     
     func newCategory(item: TodolistCategory) {
+        
         let newRowIndex = categories.count
         categories.append(item)
         

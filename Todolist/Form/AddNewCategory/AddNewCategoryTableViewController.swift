@@ -6,15 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
-protocol AddNewCategoryDelegate {
-    func newCategory(item: TodolistCategory)
-}
 class AddNewCategoryTableViewController: UITableViewController, IconCategoryDelegate{
     
-    var delegate: AddNewCategoryDelegate?
     
     var iconName: String = "book.fill"
+    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +35,21 @@ class AddNewCategoryTableViewController: UITableViewController, IconCategoryDele
     
     // MARK: - Action
     @objc func done(_ sender: Any) {
-        let category = TodolistCategory(id: UUID(), name: txtCategoryName.text!,iconName: iconName)
-        delegate?.newCategory(item: category)
         
-        navigationController?.popViewController(animated: true)
+        // TODO: - Create a Category object
+        let newCategoryObj = TodolistCategory(context: context)
+        newCategoryObj.id = UUID()
+        newCategoryObj.name = txtCategoryName.text!
+        newCategoryObj.iconName = iconName
+        
+        // TODO: - Save the data
+        do {
+            try self.context.save()
+            navigationController?.popViewController(animated: true)
+        } catch(let error){
+            print(error)
+        }
+        
     }
     
     @objc func cancel(_ sender: Any){

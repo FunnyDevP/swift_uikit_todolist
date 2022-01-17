@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09765260279556FB0050C4E0 /* TodolistCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976525E279556FB0050C4E0 /* TodolistCategory+CoreDataClass.swift */; };
 		7F1D40032792EAB900FF6F3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D40022792EAB900FF6F3C /* AppDelegate.swift */; };
 		7F1D40052792EAB900FF6F3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D40042792EAB900FF6F3C /* SceneDelegate.swift */; };
 		7F1D400C2792EABB00FF6F3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1D400B2792EABB00FF6F3C /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		7F1D401A2792EB3300FF6F3C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D40192792EB3300FF6F3C /* HomeTableViewController.swift */; };
 		7F1D401E2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D401D2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift */; };
 		7F1D40202792EE8300FF6F3C /* AddNewTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1D401F2792EE8300FF6F3C /* AddNewTableViewController.storyboard */; };
-		7F1D4023279358BE00FF6F3C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D4022279358BE00FF6F3C /* Category.swift */; };
 		7F1D4026279364F500FF6F3C /* IconCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D4025279364F500FF6F3C /* IconCategoryTableViewController.swift */; };
 		7F1D402827936A5200FF6F3C /* IconCategoryTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1D402727936A5200FF6F3C /* IconCategoryTableViewController.storyboard */; };
 		7F1D402C2794063900FF6F3C /* TodolistTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1D402B2794063900FF6F3C /* TodolistTableViewController.storyboard */; };
@@ -27,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0976525E279556FB0050C4E0 /* TodolistCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodolistCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7F1D3FFF2792EAB900FF6F3C /* Todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1D40022792EAB900FF6F3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1D40042792EAB900FF6F3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		7F1D40192792EB3300FF6F3C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		7F1D401D2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCategoryTableViewController.swift; sourceTree = "<group>"; };
 		7F1D401F2792EE8300FF6F3C /* AddNewTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewTableViewController.storyboard; sourceTree = "<group>"; };
-		7F1D4022279358BE00FF6F3C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7F1D4025279364F500FF6F3C /* IconCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCategoryTableViewController.swift; sourceTree = "<group>"; };
 		7F1D402727936A5200FF6F3C /* IconCategoryTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IconCategoryTableViewController.storyboard; sourceTree = "<group>"; };
 		7F1D402B2794063900FF6F3C /* TodolistTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodolistTableViewController.storyboard; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		7F1D4021279358AA00FF6F3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7F1D4022279358BE00FF6F3C /* Category.swift */,
+				0976525E279556FB0050C4E0 /* TodolistCategory+CoreDataClass.swift */,
 				7F1D402F27940F0400FF6F3C /* Todolist.swift */,
 			);
 			path = Models;
@@ -233,10 +233,10 @@
 			files = (
 				7F1D402E2794064900FF6F3C /* TodolistTableViewController.swift in Sources */,
 				7F1D401A2792EB3300FF6F3C /* HomeTableViewController.swift in Sources */,
-				7F1D4023279358BE00FF6F3C /* Category.swift in Sources */,
 				7F1D403027940F0400FF6F3C /* Todolist.swift in Sources */,
 				7F1D4026279364F500FF6F3C /* IconCategoryTableViewController.swift in Sources */,
 				7F1D40332794114700FF6F3C /* AddNewTodolistTableViewController.swift in Sources */,
+				09765260279556FB0050C4E0 /* TodolistCategory+CoreDataClass.swift in Sources */,
 				7F1D40032792EAB900FF6F3C /* AppDelegate.swift in Sources */,
 				7F1D401E2792EE7400FF6F3C /* AddNewCategoryTableViewController.swift in Sources */,
 				7F1D40052792EAB900FF6F3C /* SceneDelegate.swift in Sources */,

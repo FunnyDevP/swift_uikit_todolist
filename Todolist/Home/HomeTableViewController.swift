@@ -13,6 +13,8 @@ class HomeTableViewController: UITableViewController,AddNewCategoryDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
+        let dummyCategory = TodolistCategory(id: UUID(), name: "category 1", iconName: "note")
+        categories.append(dummyCategory)
     }
     
     // MARK: - Action
@@ -42,6 +44,15 @@ class HomeTableViewController: UITableViewController,AddNewCategoryDelegate {
         content.image = UIImage(systemName: category.iconName)
         cell.contentConfiguration = content
         return cell
+    }
+    
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "TodolistTableViewController", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TodolistTableViewController") as! TodolistTableViewController
+        
+        vc.category = categories[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - delegate

@@ -45,7 +45,7 @@ class HomeTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return categories.count
+
         return categories.count
     }
     
@@ -56,7 +56,7 @@ class HomeTableViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         content.text = category.name
-        content.secondaryText = String(category.numberOfTodolist)
+        content.secondaryText = "0"
         
         content.image = UIImage(systemName: category.iconName!)
         cell.contentConfiguration = content
@@ -68,19 +68,8 @@ class HomeTableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "TodolistTableViewController", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TodolistTableViewController") as! TodolistTableViewController
         
-//        vc.category = categories[indexPath.row]
+        vc.category = categories[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-//    // MARK: - delegate
-//
-//    func newCategory(item: TodolistCategory) {
-//
-//        let newRowIndex = categories.count
-//        categories.append(item)
-//
-//        let indexPath = IndexPath(row: newRowIndex, section: 0)
-//        let indexPaths = [indexPath]
-//        tableView.insertRows(at: indexPaths, with: .automatic)
-//    }
+
 }

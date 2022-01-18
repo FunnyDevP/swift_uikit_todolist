@@ -9,9 +9,11 @@ import UIKit
 
 class TodolistTableViewController: UITableViewController {
     
+    var category: TodolistCategory?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        navigationItem.title = category?.name
+        navigationItem.title = category?.name
         navigationItem.largeTitleDisplayMode = .never
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(gotoAddNewCategoryScreen))
